@@ -1,12 +1,14 @@
-#Fintech Innovation Coding Test
+# Fintech Innovation Coding Test
 
-##Checking out the code:
-To check out the project we need you to fork it to your own Github or Bitbucket account so that your commits wont be exposed.
+## Checking out the code:
+To check out the project we need you to fork it to your own Github or Bitbucket account so that your commits won't be exposed.
 
 
-##Intro:
+## Intro:
 We have an API towards application developers, which returns information about all the banks which are available for the application.
+
 The response from the API looks like this:
+```
 [
   {
     "name": "Credit Sweets",
@@ -21,13 +23,15 @@ The response from the API looks like this:
     "id": "1234"
   }
 ]
+```
 There are two version of the API:
-/v1/banks/all - implementation is based on the static file, which is locally available
-/v2/banks/all - new version of the API, which will need to read the data from the remote servers
+
+- /v1/banks/all - implementation is based on the static file, which is locally available
+- /v2/banks/all - new version of the API, which will need to read the data from the remote servers
 
 Both of the version need to return the same data structure.
 
-##Challenge:
+## Challenge:
 1. Add unit tests for both API versions.
 
 2. Refactor existing code until you are satisfied with it.
