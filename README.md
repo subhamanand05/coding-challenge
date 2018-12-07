@@ -8,7 +8,7 @@ To check out the project we need you to fork it to your own Github or Bitbucket 
 We have an API towards application developers, which returns information about all the banks which are available for the application.
 
 The response from the API looks like this:
-```
+```json
 [
   {
     "name": "Credit Sweets",
@@ -26,8 +26,8 @@ The response from the API looks like this:
 ```
 There are two version of the API:
 
-- /v1/banks/all - implementation is based on the static file, which is locally available
-- /v2/banks/all - new version of the API, which will need to read the data from the remote servers
+- `/v1/banks/all` - implementation is based on the static file, which is locally available
+- `/v2/banks/all` - new version of the API, which will need to read the data from the remote servers
 
 Both of the version need to return the same data structure.
 
@@ -36,8 +36,8 @@ Both of the version need to return the same data structure.
 
 2. Refactor existing code until you are satisfied with it.
 
-3. Complete the implementation of the "/v2/banks/all", by implementing "BanksRemoteCalls.handle" method
-The respective configuration file is banks-v2.json. Implementation needs to use the data from the configuration file,
+3. Complete the implementation of the `/v2/banks/all` endpoint, by implementing `BanksRemoteCalls.handle(Request request, Response response)` method.
+The respective configuration file is `banks-v2.json`. Implementation needs to use the data from the configuration file,
 and for each bank retrieve the data from the remote URL specified. You will need to add HTTP client of your choice to the project. 
 You can find the mock implementation for the remote URLs in the MockRemotes class. 
 
