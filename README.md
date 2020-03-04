@@ -1,7 +1,7 @@
 # Fintech Innovation Coding Test
 
 ## Checking out the code:
-To check out the project we need you to fork it to your own Github or Bitbucket account so that your commits won't be exposed.
+To check out the project we need you to clone the repo to your own Github or Bitbucket account so that your commits won't be exposed.
 
 
 ## Intro:
